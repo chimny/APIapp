@@ -1,7 +1,7 @@
 import OpenAI from "openai";
 
 const openai = new OpenAI({
-  apiKey: "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"
+  apiKey: env.gpt
 });
 
 export async function handleDroneInstructions(instruction) {
