@@ -1,7 +1,7 @@
 import OpenAI from "openai";
 
 const openai = new OpenAI({
-  apiKey: env.gpt
+  apiKey: process.env.GPT_KEY
 });
 
 export async function handleDroneInstructions(instruction) {
